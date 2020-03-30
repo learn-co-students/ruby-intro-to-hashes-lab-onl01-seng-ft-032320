@@ -142,7 +142,7 @@ describe "building a multidimensional monopoly hash" do
         expect(monopoly_with_fourth_tier.values[0][:names].values[2].values[0]).to eq("$400")
       end
 
-      it "sets the 1st key of the :shortline hash to a string, `mortgage_value`, whose value is '$800'" do
+      it "sets the 1st key of the :shortline hash to a string, 'mortgage_value', whose value is '$800'" do
 
         expect(monopoly_with_fourth_tier.values[0][:names].keys[3]).to eq(:shortline)
         expect(monopoly_with_fourth_tier.values[0][:names].values[3].has_key?("mortgage_value")).to be true
